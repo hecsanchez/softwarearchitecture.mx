@@ -1,14 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
+    title: `Software Architecture México`,
+    author: `Hector Sánchez`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://softwarearchitecture.mx`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `softwarearchmx`,
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass"),
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
